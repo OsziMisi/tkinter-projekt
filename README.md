@@ -2,3 +2,4 @@
 IKT Projektmunka Tkinter 
  -  Ótott-Kovács Máté
  -  FR
+ -  Oroszlan Mihaly

@@ -1,5 +1,6 @@
 # tkinter-projekt
-IKT Projektmunka Tkinter 
+IKT Projektmunka Tkinter
  -  Ótott-Kovács Máté
- -  FR
+ -  Falusi Ramón
  -  Oroszlan Mihaly
+ -  Github Pages: https://szaszuge.github.io/tkinter-projekt/

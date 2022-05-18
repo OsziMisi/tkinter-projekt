@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import math
+import turtle
 
 foablak = Tk()
 foablak.title("Síkidomok kerülete és területe ")
@@ -76,5 +77,15 @@ teglalap.add_command(label="Terület", command=terület, underline=0)
 teglalap.add_command(label="Kerület", command=kerület, underline=0)
 menu1.config(menu=teglalap)
 
-
+#Turtle szekció
+t = turtle.Turtle()
+t.forward(150) #Forward turtle by 150 units
+t.left(90) #Turn turtle by 90 degree
+t.forward(80) #Forward turtle by 80 units
+t.left(90) #Turn turtle by 90 degree
+t.forward(150) #Forward turtle by 150 units
+t.left(90) #Turn turtle by 90 degree
+t.forward(80) #Forward turtle by 80 units
+t.left(90) #Turn turtle by 90 degree
+#Turtle szekció
 foablak.mainloop()

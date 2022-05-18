@@ -9,15 +9,14 @@ menusor.pack(side=TOP, fill=X)
 menu7 = Menubutton(menusor, text="Háromszög", underline=0)
 menu7.pack(side = LEFT)
 teglatest=Menu(menu7)
-board = turtle.Turtle()
- 
-board.forward(100) # draw base
- 
+
+#Turtle szekció
+board = turtle.Turtle() 
+board.forward(100)
 board.left(120)
 board.forward(100)
- 
 board.left(120)
 board.forward(100)
- 
 turtle.done()
+#Turtle szekció
 foablak.mainloop()

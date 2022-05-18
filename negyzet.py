@@ -97,6 +97,8 @@ teglatest.add_command(label="Kerület", command = kerulet, underline=0)
 teglatest.add_command(label="Terület", command = terulet, underline=0)
 menu7.config(menu = teglatest)
 t = turtle.Turtle()
+
+#Turtle szekció
 t.forward(100) #Forward turtle by 100 units
 t.left(90) #Turn turtle by 90 degree
 t.forward(100)
@@ -105,4 +107,5 @@ t.forward(100)
 t.left(90)
 t.forward(100)
 t.left(90)
+#Turtle szekció
 foablak.mainloop()

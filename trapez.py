@@ -1,4 +1,5 @@
 from tkinter import *
+import turtle
 foablak = Tk()
 def kerulet():
     a = int(elso.get())
@@ -30,4 +31,16 @@ eredmeny=Label(foablak, text='Kerület')
 eredmeny.grid()
 otodik=Entry(foablak)
 otodik.grid()
+#Turtle szekció
+turtle.pencolor("#00f")
+turtle.pensize(6)
+turtle.right(120)
+turtle.forward(80)
+turtle.left(120)
+turtle.forward(180)
+turtle.left(120)
+turtle.forward(80)
+turtle.home()
+turtle.done()
+#Turtle szekció
 foablak.mainloop()

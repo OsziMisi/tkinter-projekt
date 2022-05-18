@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import math
-
+import turtle
 
 
 def kerulet():
@@ -96,4 +96,13 @@ teglatest=Menu(menu7)
 teglatest.add_command(label="Kerület", command = kerulet, underline=0)
 teglatest.add_command(label="Terület", command = terulet, underline=0)
 menu7.config(menu = teglatest)
+t = turtle.Turtle()
+t.forward(100) #Forward turtle by 100 units
+t.left(90) #Turn turtle by 90 degree
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
 foablak.mainloop()

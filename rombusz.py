@@ -17,15 +17,15 @@ def terület():
     def szamit():
         a=eval(mezo1.get())
         m=eval(mezo2.get())
-        felszin=a*m if a and b !=0 else "Hibas kerlek ne irj be mast"
+        felszin=a*m if a and a!=0 else "Hibas kerlek ne irj be mast"
         mezo3.delete(0,END)
         mezo3.insert(0, str(felszin))
 
     ablak3=Toplevel(foablak)
-    ablak3.title('Ez a rombusz kerülete és területe')
-    ablak3.minsize(width=100, height=100)
-    szoveg1=Label(ablak3, text="a:")
-    szoveg2=Label(ablak3, text="m:")
+    ablak3.title('Ez a rombusz területe')
+    ablak3.minsize(width=400, height=100)
+    szoveg1=Label(ablak3, text="Alap")
+    szoveg2=Label(ablak3, text='Magasság')
     szoveg3=Label(ablak3, text="Eredmény:")
     gomb1=Button(ablak3, text="Kiszámol", command=szamit)
     mezo1=Entry(ablak3)
@@ -34,8 +34,8 @@ def terület():
     szoveg1.grid(row=1)
     szoveg2.grid(row=2)
     szoveg3.grid(row=5)
-    gomb1.grid(row=4, column=2, sticky=W)
-    mezo1.grid(row=1, column=2, sticky=W)
+    gomb1.grid(row=3, column=2, sticky=W)
+    mezo1.grid(row=1, column=2, sticky=W) #hibaas fos [javitani kell]
     mezo2.grid(row=2, column=2, sticky=W)
     mezo3.grid(row=5, column=2, sticky=W)
     gomb2=Button(abl3, text="Kilépés", command=abl3.destroy)
@@ -54,7 +54,7 @@ def kerület():
         ablak3=Toplevel(foablak)
         ablak3.title("Téglalap kerülete")
         ablak3.minsize(width=400, height=200)
-        szoveg1=Label(abl3, text="a:")
+        szoveg1=Label(ablak3, text="a:")
         szoveg3=Label(abl3, text="Eredmény:")
         gomb1=Button(abl3, text="Kiszámol", command=szamit)
         mezo1=Entry(abl3)

@@ -9,7 +9,7 @@ import tkinter as tk
 foablak = tk.Tk()
 foablak.title('Síkidomok kerülete és területe ')
 foablak.minsize(width = 500, height=150)
-foablak.tk.call('wm', 'iconphoto', foablak._w, tk.PhotoImage(file='C:\\Users\\oroszlanmihaly\\Documents\\GitHub\\tkinter-projekt\\rombusz.png'))
+#foablak.tk.call('wm', 'iconphoto', foablak._w, tk.PhotoImage(file='C:\\Users\\oroszlanmihaly\\Documents\\GitHub\\tkinter-projekt\\rombusz.png'))
 
 
 #területet ide
@@ -24,9 +24,9 @@ def terület():
     ablak3=Toplevel(foablak)
     ablak3.title('Ez a rombusz területe')
     ablak3.minsize(width=400, height=100)
-    szoveg1=Label(ablak3, text="Alap")
-    szoveg2=Label(ablak3, text='Magasság')
-    szoveg3=Label(ablak3, text="Eredmény:")
+    szoveg1=Label(ablak3, text="Alap (cm)")
+    szoveg2=Label(ablak3, text='Magasság (cm)')
+    szoveg3=Label(ablak3, text="Eredmény: (cm2)")
     gomb1=Button(ablak3, text="Kiszámol", command=szamit)
     mezo1=Entry(ablak3)
     mezo2=Entry(ablak3)
@@ -38,7 +38,7 @@ def terület():
     mezo1.grid(row=1, column=2, sticky=W) #hibaas fos [javitani kell]
     mezo2.grid(row=2, column=2, sticky=W)
     mezo3.grid(row=5, column=2, sticky=W)
-    gomb2=Button(abl3, text="Kilépés", command=abl3.destroy)
+    gomb2=Button(ablak3, text="Kilépés", command=ablak3.destroy)
     gomb2.grid(row=6, column=4, sticky=W)
     ablak3.mainloop()
 
@@ -55,21 +55,21 @@ def kerület():
         ablak3.title("Téglalap kerülete")
         ablak3.minsize(width=400, height=200)
         szoveg1=Label(ablak3, text="a:")
-        szoveg3=Label(abl3, text="Eredmény:")
-        gomb1=Button(abl3, text="Kiszámol", command=szamit)
-        mezo1=Entry(abl3)
-        mezo2=Entry(abl3)
-        mezo3=Entry(abl3)
+        szoveg3=Label(ablak3, text="Eredmény:")
+        gomb1=Button(ablak3, text="Kiszámol", command=szamit)
+        mezo1=Entry(ablak3)
+        mezo2=Entry(ablak3)
+        mezo3=Entry(ablak3)
         szoveg1.grid(row=1)
-        szoveg2.grid(row=2)
+        szoveg3.grid(row=2)
         szoveg3.grid(row=5)
         gomb1.grid(row=4, column=2, sticky=W)
         mezo1.grid(row=1, column=2, sticky=W)
         mezo2.grid(row=2, column=2, sticky=W)
         mezo3.grid(row=5, column=2, sticky=W)
-        gomb2=Button(abl3, text="Kilépés", command=abl3.destroy)
+        gomb2=Button(ablak3, text="Kilépés", command=ablak3.destroy)
         gomb2.grid(row=6, column=4, sticky=W)
-        abl3.mainloop()
+        ablak3.mainloop()
 
 
 

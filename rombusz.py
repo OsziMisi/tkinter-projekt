@@ -7,8 +7,8 @@ import tkinter as tk
 
 
 foablak = tk.Tk()
-foablak.title('Síkidomok kerülete és területe ')
 foablak.minsize(width = 500, height=150)
+foablak.title('Síkidomok kerülete és területe')
 #foablak.tk.call('wm', 'iconphoto', foablak._w, tk.PhotoImage(file='C:\\Users\\oroszlanmihaly\\Documents\\GitHub\\tkinter-projekt\\rombusz.png'))
 
 

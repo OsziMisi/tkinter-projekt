@@ -6,6 +6,7 @@ import tkinter as tk
 
 
 
+
 foablak = tk.Tk()
 foablak.minsize(width = 500, height=150)
 foablak.title('Síkidomok kerülete és területe')
